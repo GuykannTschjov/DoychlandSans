@@ -1,0 +1,62 @@
+<html>
+    <head><title>Doychland Sans — 独逸兰黑体</title></head>
+<body>
+  <style>
+    @font-face {
+      font-family: "Doychland Sans";
+      src: url(https://guikanntschjov.github.io/DoychlandSans/Doychland%20Sans.ttf)
+    }
+  </style>
+  <link href="../mystyle.css" rel="stylesheet" type="text/css"/>
+  <iframe FRAMEBORDER=0 SCROLLING=no src="../CheapFonts/header.html" height="auto" width="100%"></iframe>
+  
+  <p>基于<a href="https://www.1001freefonts.com/helico-centrica-roman.font">Helico Centrica Roman</a>改造的“无衬线德文尖角体”。因为并不算“屑字体”，所以单独给它建了个页面。。</p>
+  
+  <h3>幻灯片介绍</h3>
+  <img class="mySlides" src="幻灯片1.jpg">
+  <img class="mySlides" src="幻灯片2.jpg">
+  <img class="mySlides" src="幻灯片3.jpg">
+  <img class="mySlides" src="幻灯片4.jpg">
+  <img class="mySlides" src="幻灯片5.jpg">
+  <img class="mySlides" src="幻灯片6.jpg">
+  <img class="mySlides" src="幻灯片7.jpg">
+  <img class="mySlides" src="幻灯片8.jpg">
+  <img class="mySlides" src="幻灯片9.jpg">
+  <img class="mySlides" src="幻灯片10.jpg">
+  <img class="mySlides" src="幻灯片11.jpg">
+  <img class="mySlides" src="幻灯片12.jpg">
+  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+    }
+</script>
+  
+  <h3>网页字体预览</h3>
+  <div style="font-family: "Doychland Sans"; width:90%; margin:0 auto; background-color: rgb(255, 255, 255, 0.35); border: solid 1px black">
+    <span style="font-size:200%">Lorem Ipsum</span>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+  
+  <h3>下载</h3>
+  <a href="https://github.com/GuikannTschjov/DoychlandSans/releases/tag/Main">点此到Release页面下载</a>
+  
+
+  <iframe FRAMEBORDER=0 SCROLLING=no src="../footer.html" style="height:472px;"  height="auto" width="100%"></iframe>
+</body>
+</html>
